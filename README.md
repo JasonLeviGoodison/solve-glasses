@@ -21,24 +21,16 @@ Solve Glasses is an Android application that transforms Vuzix smart glasses into
 
 When the keyword is detected, all captured context (audio, video, and environmental data) is sent to OpenAI's API for processing. The response is then displayed with a smooth scrolling animation so users can comfortably read the AI's analysis.
 
-## Key Features
-
-- 🎤 Voice activation via keyword detection
-- 📹 Real-time visual context capture
-- 🤖 OpenAI integration for intelligent responses
-- 📜 Scrolling display for easy readability
-- 👓 Native Vuzix headset support
-
 ## Technical Stack
 
 - **Platform:** Android
-- **Hardware:** Vuzix Smart Glasses
+- **Hardware:** Vuzix Smart Glasses (Blade 2)
 - **AI Service:** OpenAI API
 - **Language:** Java/Kotlin
 
 
 ### How to run
-Follow the Vuzix set up guide and get your glasses running through android studio. Then, you need to copy the Volk transcription onto the device
+Follow the Vuzix set up guide and get your glasses running through android studio. Then, you need to copy a small Volk transcription model onto the device
 - Vuzix has a keyword tracker more or less, but we needed every word transcribed and this is the easiest way to do it
 
 To download it, do this
@@ -60,25 +52,15 @@ Then run this and watch the logs:
 adb logcat | grep -E "VoskTranscriber|Transcript|VuzixVM"
 ```
 
-## Why This Won't Work in Production
-
-While conceptually interesting, this approach has several real-world limitations:
-
-- Constant API calls create latency issues
-- Privacy concerns with continuous context capture
-- Battery drain from constant sensor monitoring
-- Requires reliable internet connectivity
-- May not work reliably in varied lighting conditions
-
 ## Use Cases for Learning
 
 This project is ideal for developers wanting to explore:
 
 - AR application development
 - Voice command integration
-- Sensor fusion in mobile apps
 - API integration in edge devices
 - Real-time display rendering
+- Basically smart glasses tech
 
 ---
 
