@@ -17,7 +17,7 @@ Solve Glasses is an Android application that transforms Vuzix smart glasses into
 
 - **Microphone Input** - Builds up context on conversation and then will run AI when it hears the "solve" voice command
 - **Camera Feed** - Captures the wearer's point of view
-- **Display Output** - Shows AI-generated responses directly in the headset
+- **Display Output** - Shows AI-generated responses directly in the headset. There is little light bleed so the wearer is the only one that can see it
 
 When the keyword is detected, all captured context (audio, video, and environmental data) is sent to OpenAI's API for processing. The response is then displayed with a smooth scrolling animation so users can comfortably read the AI's analysis.
 
